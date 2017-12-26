@@ -7,8 +7,17 @@ class ProductImageInline(admin.TabularInline):
     extra = 0
 
 
+class ProductCategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'is_active']
+
+    class Meta:
+        model = ProductCategory
+
+admin.site.register(ProductCategory, ProductCategoryAdmin)
+
+
 class ProductAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in Product._meta.fields]
+    list_display = ['name', 'category', 'price', 'discount', 'is_active', 'created', 'updated']
     inlines = [ProductImageInline]
 
     class Meta:
@@ -19,7 +28,7 @@ admin.site.register(Product, ProductAdmin)
 
 
 class ProductImageAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ProductImage._meta.fields]
+    list_display = ['product', 'image', 'is_active', 'is_main','created', 'updated']
 
     class Meta:
         model = ProductImage

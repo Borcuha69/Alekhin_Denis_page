@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #edeef0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.wrapper-content {
+    flex: 1 0 auto;
+}
+
+nav {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.82) 33%, #b1b1ad 66%, rgb(238, 238, 238));
+}
+
+/*-----------------Mobile menu-button-----------------*/
+
+.navbar-toggle {
+    background-color: transparent;
+    border-color: #000000;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-toggle:hover {
+    background-color: #000000;
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: white;
+}
+
+/*-----------------Mobile menu-button-----------------*/
+
+.navbar-static-top {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    background: linear-gradient(45deg, rgb(238, 238, 238) 33%, #b1b1ad 66%, rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    display: table;
+    font-size: 40px;
+}
+
+.nav.navbar-nav a {
+    color: black;
+    font-size: 20px;
+}
+
+.nav.navbar-nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+/*----------------- Galery -----------------*/
+
+
+
+/*----------------- Galery -----------------*/
+
+.footer {
+    flex: 0 0 auto;
+}

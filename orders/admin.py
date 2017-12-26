@@ -8,7 +8,7 @@ class ProductInOrderInline(admin.TabularInline):
 
 
 class StatusAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in Status._meta.fields]
+    list_display = ['name', 'is_active', 'created', 'updated']
 
     class Meta:
         model = Status
@@ -30,7 +30,7 @@ admin.site.register(Order, OrderAdmin)
 
 
 class ProductInOrderAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ProductInOrder._meta.fields]
+    list_display = ['order', 'product', 'nmb', 'price_per_item', 'total_price', 'is_active', 'created', 'updated']
     search_fields = ['product', 'order']
 
     class Meta:
