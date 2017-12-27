@@ -28,6 +28,20 @@ html, body {
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.83) 33%, #b1b1ad 66%, rgb(238, 238, 238));
 }
 
+.basket-items {
+    position: relative;
+    width: 272%;
+    background: none;
+    z-index: 10;
+    padding: 0 1.5em 1em;
+    text-align: left;
+    color: black;
+}
+
+.navbar-collapse {
+    overflow-x: hidden;
+}
+
 /*-----------------Mobile menu-button-----------------*/
 
 .navbar-toggle {
@@ -72,6 +86,11 @@ html, body {
     background-color: black;
 }
 
+.nav.navbar-nav .basket-items:hover {
+    color: white;
+    background-color: black;
+}
+
 .product-item {
     overflow: auto;
     min-height: 530px;
@@ -79,7 +98,7 @@ html, body {
     border: 1px solid lightgrey;
     position: relative;
     margin: 20px 0;
-    padding: 5px;
+    padding: 5px 5px 20px 5px;
 }
 
 .discount-container {
@@ -90,6 +109,24 @@ html, body {
   color: white;
   font-weight: 700;
   margin-left: -5px;
+}
+
+.btn-default {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.btn-default:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	background: black;
+    color: white;
+    outline: none;
 }
 
 .footer {

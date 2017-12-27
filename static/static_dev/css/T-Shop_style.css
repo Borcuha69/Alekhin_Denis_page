@@ -12,12 +12,26 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    text-align: center;
     overflow-x: hidden;
+    text-align: center;
 }
 
 .wrapper-content {
     flex: 1 0 auto;
+}
+
+.basket-items {
+    position: absolute;
+    top: 3.85em;;
+    width: 22.7em;
+    background: linear-gradient(45deg, rgb(198, 198, 196) 33%, rgb(225, 225, 223) 66%, rgb(238, 238, 238));
+    z-index: 10;
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+.navbar-collapse {
+    overflow-x: hidden;
 }
 
 nav {
@@ -68,11 +82,49 @@ nav {
     background-color: black;
 }
 
-/*----------------- Galery -----------------*/
+.nav.navbar-nav .delete-item {
+    font-size: 14px;
+}
 
+.fotorama {
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color: white;
+}
 
+.btn {
+    padding: 7px 20px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    border-color: black;
+}
 
-/*----------------- Galery -----------------*/
+.btn:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.btn:focus, .btn:active, .btn.active, .open > .dropdown-toggle.btn {
+	background: black;
+    color: white;
+    outline: none;
+}
+
+.nav-tabs>li>a {
+    color: black;
+    font-size: 16px;
+}
+
+.nav-tabs {
+    margin-top: 7%;
+}
+
+.tab-content {
+    margin-top: 3%;
+    text-align: left;
+}
 
 .footer {
     flex: 0 0 auto;

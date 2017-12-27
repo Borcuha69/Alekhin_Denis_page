@@ -18,7 +18,7 @@ admin.site.register(Status, StatusAdmin)
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['customer_name', 'customer_phone', 'total_price', 'status', 'created', 'updated']
+    list_display = ['status', 'customer_name', 'customer_phone', 'total_price', 'created', 'updated']
     search_fields = ['status', 'customer_name']
     inlines = [ProductInOrderInline]
 

@@ -10,9 +10,9 @@
         {% endif %}
         <h4>{{ product.product.name }}</h4>
         <p>{{ product.product.description|truncatechars_html:128 }}</p>
-        <p>{{ product.product.price }} RU</p>
+        <p><b>{{ product.product.price }} ₽</b></p>
         <div class="add-to-card-btn">
-            <button class="btn btn-primary">Добавить в корзину</button>
+            <button class="btn btn-default">Добавить в корзину</button>
         </div>
     </div>
 </div>
