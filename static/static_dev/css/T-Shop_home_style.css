@@ -93,7 +93,7 @@ html, body {
 
 .product-item {
     overflow: auto;
-    min-height: 530px;
+    min-height: 360px;
     background-color: white;
     border: 1px solid lightgrey;
     position: relative;
@@ -109,24 +109,6 @@ html, body {
   color: white;
   font-weight: 700;
   margin-left: -5px;
-}
-
-.btn-default {
-    background: black;
-    color: white;
-    border-color: black;
-}
-
-.btn-default:hover {
-    background: white;
-    color: black;
-    border-color: black;
-}
-
-.btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-	background: black;
-    color: white;
-    outline: none;
 }
 
 .footer {

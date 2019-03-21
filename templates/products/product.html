@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-6">
             <h1>{{ product.name }}</h1>
-            <form id="form_buying_product">
+            <form id="form_buying_product" action="{% url 'basket_adding' %}">{% csrf_token %}
                 <h3><b>{{ product.price }} ₽</b></h3>
                 <button type="submit" id="submit_btn" class="btn btn-default btn-buy"
                     data-product_id = "{{ product.id }}"
